@@ -10,14 +10,19 @@
 
 <body>
     <a-scene>
-        <a-assets>
-            <img id="boxTexture" src="frog.jpg">
-            <img id="skyTexture" src="background.jpg">
-        </a-assets>
-        <a-sky src="#skyTexture"></a-sky>
-        <a-box id="box1" src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
-        <a-sphere id="sphere1" position="2 1.25 -5" radius="1.25" color="#3eb489"></a-sphere> 
-    </a-scene>
+        <a-sky src="https://media.istockphoto.com/id/1218214908/photo/aerial-photo-360-degrees-in-vaujany-french-alps.jpg?s=612x612&w=0&k=20&c=tQWD8U1nsUAMwanYWXNCTXLviGSHsI_wJAQ-qPDLzg4="></a-sky>
+        <a-cylinder id="cylinder1" src="https://t3.ftcdn.net/jpg/04/40/22/70/360_F_440227009_RvjpN1G6Ei2X3SAS6N32sHQOmV68VTLn.jpg" position="0 0.5 -5" rotation="0 0 0" scale="1 1 1" animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+        animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
+        animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave" height="0.5" radius="2" metalness="1"></a-cylinder>
+        <a-plane id="ground" src="https://media.istockphoto.com/id/1411569788/photo/natural-scratched-ice-at-the-ice-rink-as-texture-or-background-for-winter-composition-large.jpg?s=612x612&w=0&k=20&c=dJzn6oxXxVnbS0IkOMG0nR4RrXdxv6pVz7MVtnYX6_o=" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+        <!-- <a-light type="ambient" color="#FDFD96"></a-light> -->
+        <!-- <a-entity light="color: #FFBF00; intensity: 1" position="-1 1 0"></a-entity> -->
+        <!-- <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity> -->
+
+        <a-camera>
+            <a-cursor color="red"></a-cursor>
+        </a-camera>
+      </a-scene>
     
 </body>
 
