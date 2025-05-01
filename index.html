@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Getting Started with VR</title>
+    <meta name="description" content="Getting Started with VR">
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="boxTexture" src="frog.jpg">
+            <img id="skyTexture" src="background.jpg">
+        </a-assets>
+        <a-sky src="#skyTexture"></a-sky>
+        <a-box id="box1" src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+        <a-sphere id="sphere1" position="2 1.25 -5" radius="1.25" color="#3eb489"></a-sphere> 
+    </a-scene>
+    
+</body>
+
+</html>
